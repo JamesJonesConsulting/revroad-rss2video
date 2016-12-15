@@ -1,0 +1,19 @@
+{
+  "name": "revroad-rss2video",
+  "version": "1.0.0",
+  "description": "Pulls a RSS feed and converts it to JSON and then it's videos",
+  "main": "index.js",
+  "dependencies": {
+    "command-queue": "^0.1.4",
+    "dateformat": "^2.0.0",
+    "fs": "0.0.1-security",
+    "http": "0.0.0",
+    "xml2json": "^0.10.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "James Jones",
+  "license": "ISC"
+}
