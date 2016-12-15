@@ -34,7 +34,6 @@ http.get({
         url: s.enclosure.url,
         pubDate: new Date(s.pubDate)
       };
-      // return s.pubDate;
     }).map(function(s) {
       return {
         filename: s.filename,
