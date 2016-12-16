@@ -52,7 +52,7 @@ http.get({
 	filename: s.filename,
         url: s.url,
         pubDate: s.pubDate,
-        ffmpeg: "ffmpeg -loop 1 -i '" + "videos/logo.jpg" + "' -i  '" + s.url + "' -shortest -c:v libvpx-vp9 -c:a libopus -threads 2 -tile-columns 1 -speed 2 -auto-alt-ref 1 -lag-in-frames 25 '" + s.filename + "'"
+        ffmpeg: "ffmpeg -loglevel error -loop 1 -i '" + "videos/logo.jpg" + "' -i  '" + s.url + "' -shortest -c:v libvpx-vp9 -c:a libopus -threads 2 -tile-columns 1 -speed 2 -auto-alt-ref 1 -lag-in-frames 25 '" + s.filename + "'"
       };
     }).forEach(function(s) {
       console.log(sepline);
