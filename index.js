@@ -33,6 +33,8 @@ http.get({
     let parsedData =  JSON.parse(parser.toJson(rawData)).rss.channel.item;
     parsedData.filter(function(s) {
       return  new Date(param) <= new Date(s.pubDate);
+    }).sort(function(s1, s2) {
+      return new Date(s1.pubDate).getTime() - new Date(s2.pubDate).getTime();
     }).map(function(s) {
       s.pubDate = new Date(s.pubDate);
       s.url = s.enclosure.url;
